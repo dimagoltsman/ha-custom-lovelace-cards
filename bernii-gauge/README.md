@@ -3,6 +3,9 @@
 *based on http://bernii.github.io/gauge.js
 
 
+![screenshot](https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/bernii-gauge/screenshot.png?raw=true)
+
+
 
 put js files in your www dir and add the js files to your resources in ui-lovelace.yaml
 ```
