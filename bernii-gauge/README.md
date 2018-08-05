@@ -11,7 +11,7 @@ resources:
     type: js
   - url: /local/content-card-gauge.js
     type: js
-    ```
+```
 
 configure your gauge. example:
 
