@@ -46,6 +46,6 @@ configure your gauge. example:
           - strokeStyle: "#F03E3E" # red
             min: 7
             max: 10
-        ```
+```
         
  all attributes under gaugeconfig are configurable by the gauge js http://bernii.github.io/gauge.js/
