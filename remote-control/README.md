@@ -17,7 +17,9 @@ configuration is very easy. first, find your broadlink id for sending packets (c
 and then just configure the broadlink codes for each button.
 
 if you want to add your own remote template, you can do it in a new folder near the 'simple' remote and
-set remote_template to the name of your new folder. you are also welcome to contribute new templates.
+set remote_template to the name of your new folder. 
+
+#you are also welcome to contribute new templates. you can add new buttons and remove buttons, just make sure their id matches the id you put in the yaml
 
 ```
   - type: "custom:content-card-remote-control"
