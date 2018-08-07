@@ -6,7 +6,7 @@
 
 
 
-put js and image files in your www dir and add the js files to your resources in ui-lovelace.yaml
+put js and the folder files in your www dir and add the js files to your resources in ui-lovelace.yaml
 ```
 resources:
   - url: /local/content-card-remote-control.js
@@ -16,10 +16,14 @@ resources:
 configuration is very easy. first, find your broadlink id for sending packets (can be found under HA services page),
 and then just configure the broadlink codes for each button.
 
+if you want to add your own remote template, you can do it in a new folder near the 'simple' remote and
+set remote_template to the name of your new folder. you are also welcome to contribute new templates.
+
 ```
   - type: "custom:content-card-remote-control"
     broadlink_entity: 'broadlink_send_packet_192_168_1_151'
     name: Hisense
+    remote_template: simple
     buttons:
       power:
       source: "JgBYAAABKpITEhQQFRAVEBMSFBEUERMREzYWNBQ1FTQVNRQ1FRAVNRQREzYUEBUQFTUUERQRFBAVNRQRFDUVNBUREzYTNhQ2EwAFTgABKUcVAAxWAAEpRxQADQU="
