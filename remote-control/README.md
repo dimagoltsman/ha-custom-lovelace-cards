@@ -13,6 +13,8 @@ resources:
 configuration is very easy. first, find your broadlink id for sending packets (can be found under HA services page),
 and then just configure the broadlink codes for each button.
 
+all buttuns are configured according to the id of the button in the html section of `remote-html.js`
+
 
 ```
   - type: "custom:content-card-remote-control"
