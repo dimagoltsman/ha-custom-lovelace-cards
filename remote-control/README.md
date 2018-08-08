@@ -1,6 +1,6 @@
 # Remote Control card #
 
-<img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/1d947f7fede0ff22c51d9aacb667502ee79e285f/remote-control/screenshot.png?raw=true" height="400">
+<img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/screenshot.png?raw=true" height="400">
 
 
 put js and the folder files in your www dir and add the js files to your resources in ui-lovelace.yaml
@@ -13,10 +13,6 @@ resources:
 configuration is very easy. first, find your broadlink id for sending packets (can be found under HA services page),
 and then just configure the broadlink codes for each button.
 
-if you want to add your own remote template, you can do it in a new folder near the 'simple' remote and
-set remote_template to the name of your new folder. 
-
-#you are also welcome to contribute new templates. you can add new buttons and remove buttons, just make sure their id matches the id you put in the yaml#
 
 ```
   - type: "custom:content-card-remote-control"
@@ -52,3 +48,11 @@ set remote_template to the name of your new folder.
       mute: "JgCgAJaSEQ8RDxIPEg8SMBIvEg8SDxIvETERMBAxEg8SDxIPEQ8SkhIPEg8SDxIPETASDxIPERARLxIwEi8SDxIPEjARMBIwERASDREQEjASAAdhlJMSDxEQERARDxIvEjASDxEPETESMBEwEjARDxAQEg8SDxKSEg8REBEPEg8SMBEQEQ8REBIwEi8SLxIPEg8SLxIwEi8SDxEQEg8RMBEADQUAAAAAAAAAAA=="
 
 ```
+
+
+# Contribution
+if you want to add your own remote template, you can do it in a new folder near the 'simple' and 'lg' remotes and
+set remote_template to the name of your new folder. 
+just make sure you are changing the html and css methods suffixes
+
+#you are also welcome to contribute new templates. you can add new buttons and remove buttons, just make sure their id matches the id you put in the yaml#
