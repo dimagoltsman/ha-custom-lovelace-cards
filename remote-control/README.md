@@ -1,9 +1,6 @@
 # Remote Control card #
 
-
-
-![screenshot](https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/1d947f7fede0ff22c51d9aacb667502ee79e285f/remote-control/screenshot.png?raw=true)
-
+<img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/1d947f7fede0ff22c51d9aacb667502ee79e285f/remote-control/screenshot.png?raw=true" height="400">
 
 
 put js and the folder files in your www dir and add the js files to your resources in ui-lovelace.yaml
