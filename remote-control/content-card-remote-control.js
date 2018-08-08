@@ -1,6 +1,6 @@
-var scriptLoaded = false;
+ 
 function loadScript(remote_template){
-	if(scriptLoaded){
+	if(window[`scriptLoaded_${remote_template}`]){
 		return;
 	}
 
@@ -9,7 +9,7 @@ function loadScript(remote_template){
 	script.type = "text/javascript";
 	script.async = false;
 	document.head.appendChild(script); 
-	scriptLoaded = true;
+	window[`scriptLoaded_${remote_template}`] = true;
 	
 }
 
@@ -32,13 +32,15 @@ class ContentCardRemoteControl extends HTMLElement {
   
   set hass(hass) {
   	
+
+  
     const config = this._config;
     
     loadScript(config.remote_template);
     
     try{
-    	const html = getRemoteHtml(config);
-        const css = getRemoteStyle(config)
+    	const html = window[`getRemoteHtml_${config.remote_template}`](config);
+        const css = window[`getRemoteStyle_${config.remote_template}`](config);
         
         
         const root = this.shadowRoot;
@@ -46,7 +48,7 @@ class ContentCardRemoteControl extends HTMLElement {
         // root.lastChild.hass = hass;
    
         const card = document.createElement('ha-card');
-        if(!this.content && scriptLoaded){
+        if(!this.content && window[`scriptLoaded_${config.remote_template}`]){
              this.content = document.createElement('div');
              const style = document.createElement('style');
              style.textContent = css;
@@ -69,7 +71,7 @@ class ContentCardRemoteControl extends HTMLElement {
 
     
   _bindButtons(card, hass, config){
-  	var buttons =  card.getElementsByClassName("myButton");
+  	var buttons =  card.getElementsByClassName(`myButton-${config.remote_template}`);
     var i;
     for (i = 0; i < buttons.length; i++) { 
     	let button = buttons[i]
