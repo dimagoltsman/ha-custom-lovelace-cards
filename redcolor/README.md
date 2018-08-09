@@ -11,9 +11,10 @@ resources:
     type: js
 ```
 
-configure your card. example:
+configure your card and set a refresh rate(seconds)
 
 ```
 - type: "custom:content-card-redcolor"
+  refresh: 5
      
 ```
