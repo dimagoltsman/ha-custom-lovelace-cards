@@ -1,4 +1,4 @@
-#Gauge card
+# Red Color Alerts
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/redcolor/screenshot.png?raw=true" height="400">
 
