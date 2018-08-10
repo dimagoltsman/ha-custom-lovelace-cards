@@ -92,7 +92,7 @@ LG remote example:
 ```
 
 
-Mibox Remote example (code also from mibox):
+Mibox Remote example, thanx to Avi Abeksis! (code also from mibox):
 
 <img src="https://github.com/dimagoltsman/ha-custom-lovelace-cards/blob/master/remote-control/content-card-remote-control/mibox/remote-back.png?raw=true" height="400">
 
