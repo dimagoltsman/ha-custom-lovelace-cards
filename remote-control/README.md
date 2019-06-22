@@ -18,7 +18,7 @@ all buttuns are configured according to the id of the button in the html section
 simple remote example:
 ```
   - type: "custom:content-card-remote-control"
-    broadlink_entity: 'broadlink_send_packet_192_168_1_151'
+    broadlink_host: '192.168.1.151'
     name: Hisense
     remote_template: simple
     buttons:
@@ -55,7 +55,7 @@ simple remote example:
 LG remote example:
 ```
       - type: "custom:content-card-remote-control"
-        broadlink_entity: 'broadlink_send_packet_192_168_1_11'
+        broadlink_host: '192.168.1.151'
         name: LG Tv
         remote_template: simple
         buttons:
@@ -98,7 +98,7 @@ Mibox Remote example, thanx to Avi Abeksis! (code also from mibox):
 
 ```
 - type: "custom:content-card-remote-control"
-  broadlink_entity: 'broadlink_send_packet_192_168_1_151'
+  broadlink_host: '192.168.1.151'
   name: Mibox
   remote_template: mibox
   buttons:
