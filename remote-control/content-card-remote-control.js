@@ -77,9 +77,9 @@ class ContentCardRemoteControl extends HTMLElement {
     	let button = buttons[i]
         button.addEventListener('click', function(source){
         	console.log(button.id);
-        	hass.callService('switch',
-        	                  config.broadlink_entity, 
-        	                  {packet: [getPacket(button.id, config)]}
+        	hass.callService('broadlink',
+        	                  'send', 
+        	                  {packet: [getPacket(button.id, config)], host: config.broadlink_host}
                              );
         });
     }
