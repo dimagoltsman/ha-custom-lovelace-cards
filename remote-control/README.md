@@ -122,7 +122,7 @@ PartnerTV Remote example, thanx to @VirtualL :
 
 ```
 - type: "custom:content-card-remote-control"
-  broadlink_entity: 'broadlink_send_packet_192_168_1_151'
+  broadlink_host: '192.168.1.151'
   name: PartnerTV
   remote_template: partner
   buttons:
