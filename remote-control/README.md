@@ -124,3 +124,9 @@ set remote_template to the name of your new folder.
 just make sure you are changing the html and css methods suffixes
 
 #you are also welcome to contribute new templates. you can add new buttons and remove buttons, just make sure their id matches the id you put in the yaml#
+
+
+
+# Latest fix
+fixed for 0.92 +
+please update JS file, remove broadlink_entity from the settings and add broadlink_host with your broadlink ip
